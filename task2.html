@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Todo List</h1>
+        <form id="todo-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" placeholder="Enter task..." required>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" required>
+            <label for="importance">Importance:</label>
+            <select id="importance" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="label">Label:</label>
+            <input type="text" id="label" placeholder="Enter label...">
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
